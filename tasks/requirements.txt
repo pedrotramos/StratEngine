@@ -1,0 +1,6 @@
+httpx==0.28.1
+pandas==2.2.3
+pendulum==3.0.0
+pymongo==4.10.1
+tqdm==4.67.1
+yfinance==0.2.52

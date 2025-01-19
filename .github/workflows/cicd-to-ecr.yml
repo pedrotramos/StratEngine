@@ -26,7 +26,7 @@ jobs:
       # Step 3: Build the Docker image from the tasks directory
       - name: Build Docker image
         run: |
-          docker build -t qam-tasks ./tasks
+          docker build --build-arg MONGODB_URI=${{ secrets.MONGODB_URI }} --build-arg BRAPI_TOKEN=${{ secrets.BRAPI_TOKEN }} -t qam-tasks ./tasks
 
       # Step 4: Tag the Docker image with the ECR repository URI
       - name: Tag Docker image
