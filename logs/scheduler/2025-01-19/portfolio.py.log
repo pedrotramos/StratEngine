@@ -5723,3 +5723,24 @@ NameError: name 'ECSRunTaskOperator' is not defined. Did you mean: 'EcsRunTaskOp
 [2025-01-19T07:50:10.890+0000] {logging_mixin.py:190} INFO - [2025-01-19T07:50:10.890+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-01-19T07:50:10.898+0000] {logging_mixin.py:190} INFO - [2025-01-19T07:50:10.898+0000] {dag.py:4180} INFO - Setting next_dagrun for generate_portfolio to None, run_after=None
 [2025-01-19T07:50:10.907+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/portfolio.py took 0.060 seconds
+[2025-01-19T07:50:41.223+0000] {processor.py:186} INFO - Started process (PID=5850) to work on /opt/airflow/dags/portfolio.py
+[2025-01-19T07:50:41.224+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/portfolio.py for tasks to queue
+[2025-01-19T07:50:41.225+0000] {logging_mixin.py:190} INFO - [2025-01-19T07:50:41.225+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/portfolio.py
+[2025-01-19T07:50:41.236+0000] {processor.py:925} INFO - DAG(s) 'generate_portfolio' retrieved from /opt/airflow/dags/portfolio.py
+[2025-01-19T07:50:41.261+0000] {logging_mixin.py:190} INFO - [2025-01-19T07:50:41.260+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-19T07:50:41.269+0000] {logging_mixin.py:190} INFO - [2025-01-19T07:50:41.269+0000] {dag.py:4180} INFO - Setting next_dagrun for generate_portfolio to None, run_after=None
+[2025-01-19T07:50:41.279+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/portfolio.py took 0.064 seconds
+[2025-01-19T07:51:11.544+0000] {processor.py:186} INFO - Started process (PID=5857) to work on /opt/airflow/dags/portfolio.py
+[2025-01-19T07:51:11.545+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/portfolio.py for tasks to queue
+[2025-01-19T07:51:11.547+0000] {logging_mixin.py:190} INFO - [2025-01-19T07:51:11.546+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/portfolio.py
+[2025-01-19T07:51:11.555+0000] {processor.py:925} INFO - DAG(s) 'generate_portfolio' retrieved from /opt/airflow/dags/portfolio.py
+[2025-01-19T07:51:11.583+0000] {logging_mixin.py:190} INFO - [2025-01-19T07:51:11.583+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-19T07:51:11.593+0000] {logging_mixin.py:190} INFO - [2025-01-19T07:51:11.592+0000] {dag.py:4180} INFO - Setting next_dagrun for generate_portfolio to None, run_after=None
+[2025-01-19T07:51:11.605+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/portfolio.py took 0.067 seconds
+[2025-01-19T07:51:41.912+0000] {processor.py:186} INFO - Started process (PID=5864) to work on /opt/airflow/dags/portfolio.py
+[2025-01-19T07:51:41.914+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/portfolio.py for tasks to queue
+[2025-01-19T07:51:41.916+0000] {logging_mixin.py:190} INFO - [2025-01-19T07:51:41.916+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/portfolio.py
+[2025-01-19T07:51:41.927+0000] {processor.py:925} INFO - DAG(s) 'generate_portfolio' retrieved from /opt/airflow/dags/portfolio.py
+[2025-01-19T07:51:41.946+0000] {logging_mixin.py:190} INFO - [2025-01-19T07:51:41.945+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-19T07:51:41.955+0000] {logging_mixin.py:190} INFO - [2025-01-19T07:51:41.955+0000] {dag.py:4180} INFO - Setting next_dagrun for generate_portfolio to None, run_after=None
+[2025-01-19T07:51:41.967+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/portfolio.py took 0.061 seconds
