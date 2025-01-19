@@ -1,0 +1,39 @@
+name: CI/CD to ECR
+
+on:
+  push:
+    branches:
+      - main # Run the workflow on pushes to the 'main' branch
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Log in to Amazon ECR
+      - name: Log in to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+
+      # Step 3: Build the Docker image from the tasks directory
+      - name: Build Docker image
+        run: |
+          docker build -t qam-tasks ./tasks
+
+      # Step 4: Tag the Docker image with the ECR repository URI
+      - name: Tag Docker image
+        run: |
+          docker tag qam-tasks:latest ${{ secrets.ECR_REPOSITORY_URI }}:latest
+
+      # Step 5: Push the Docker image to Amazon ECR
+      - name: Push Docker image to ECR
+        run: |
+          docker push ${{ secrets.ECR_REPOSITORY_URI }}:latest
