@@ -42,7 +42,7 @@ Given the team's initial resistance to cloud computing and budget constraints, I
 
 - **Implementing CI/CD pipelines**, automating deployment and reducing manual intervention.
 
-## The Results
+## Results
 
 The new architecture delivered significant improvements:
 
@@ -56,4 +56,4 @@ The new architecture delivered significant improvements:
 
 This repository contains a simplified version of the original system. For simplicity, Neon has been replaced with MongoDB Atlas, and a single example DAG is provided. The proprietary models used by the firm are not included.
 
-Here's a link to the repo of a mocked version of the web dashboard created for the firm: [AlphaTracker](https://github.com/pedrotramos/AlphaTracker)
+Check out the repository for a mocked version of the [AlphaTracker](https://github.com/pedrotramos/AlphaTracker) web dashboard, created for the firm.
