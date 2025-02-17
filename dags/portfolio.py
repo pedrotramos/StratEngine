@@ -5,7 +5,7 @@ from pendulum import datetime, timezone
 
 @dag(
     start_date=datetime(2025, 1, 1, tz=timezone("America/Sao_Paulo")),
-    schedule=None,
+    schedule="0 8 * * *",
     catchup=False,
     doc_md=__doc__,
     default_args={"owner": "Pedro", "retries": 0},
